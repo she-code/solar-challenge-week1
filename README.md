@@ -29,7 +29,7 @@ cd solar-challenge-week1
 
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+venv/bin/activate  # On Mac: source venv\Scripts\activate
 ```
 3. **Install dependencies:**
    
