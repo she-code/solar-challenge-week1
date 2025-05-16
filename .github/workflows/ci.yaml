@@ -1,23 +1,24 @@
 name: CI
-on: [push,pull_request]
+on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
 
-    # Checkout repo
     steps:
+      # Checkout repo
       - name: Checkout repo
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
-     # Setup Python 3.11
+      # Setup Python
       - name: Set up Python
         uses: actions/setup-python@v4
-        with python-version: '3.x'
+        with:
+          python-version: '3.x'
 
-     # Install dependencies  
+      # Install dependencies  
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-     # Run tests
+      # Run tests
       - name: Run test
         run: python --version
