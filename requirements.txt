@@ -80,8 +80,8 @@ pyparsing==3.2.3
 python-dateutil==2.9.0.post0
 python-json-logger==3.3.0
 pytz==2025.2
-pywin32==310; platform_system=="Windows"
-pywinpty==2.0.15; platform_system=="Windows"
+pywin32==310
+pywinpty==2.0.15
 PyYAML==6.0.2
 pyzmq==26.4.0
 referencing==0.36.2
@@ -89,6 +89,7 @@ requests==2.32.3
 rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
 rpds-py==0.25.0
+scipy==1.15.3
 seaborn==0.13.2
 Send2Trash==1.8.3
 setuptools==80.7.1
@@ -110,3 +111,4 @@ webcolors==24.11.1
 webencodings==0.5.1
 websocket-client==1.8.0
 widgetsnbextension==4.0.14
+windrose==1.9.2
