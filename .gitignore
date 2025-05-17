@@ -1,3 +1,4 @@
 .venv
 data/*.csv
 data/togo-dapaong_qc.csv
+data/sierraleone-bumbuna.csv
