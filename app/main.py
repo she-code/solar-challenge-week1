@@ -21,7 +21,30 @@ def handle_file_upload():
         uploaded_file = st.sidebar.file_uploader(
             "Upload your CSV file",
             type=["csv"],
-            help="Upload your solar data CSV file"
+        help=(
+    "Upload your solar data CSV file.\n\n"
+    "The file should contain the following columns:\n"
+    "- timestamp: e.g., 2010-01-01,(required)\n"
+    "- GHI: Global Horizontal Irradiance (required)\n"
+    "- DNI: Direct Normal Irradiance (required)\n"
+    "- DHI: Diffuse Horizontal Irradiance (required)\n"
+    "- ModA, ModB: Module power output values \n"
+    "- Tamb: Ambient temperature \n"
+    "- RH: Relative Humidity \n"
+    "- WS: Wind Speed \n"
+    "- WSgust: Wind Gust Speed \n"
+    "- WSstdev: Wind Speed Std Dev \n"
+    "- WD: Wind Direction \n"
+    "- WDstdev: Wind Direction Std Dev \n"
+    "- BP: Barometric Pressure \n"
+    "- Cleaning: Cleaning factor \n"
+    "- Precipitation: Precipitation level \n"
+    "- TModA, TModB: Module temperatures \n"
+    "- country: Country name\n"
+    "- region: Region name\n\n"
+    "Ensure the data is cleaned and formatted correctly before uploading."
+)
+
         )
         return uploaded_file
     return None
