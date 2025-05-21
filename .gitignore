@@ -2,3 +2,5 @@
 data/*.csv
 data/togo-dapaong_qc.csv
 data/sierraleone-bumbuna.csv
+__pycache__/
+*.pyc
